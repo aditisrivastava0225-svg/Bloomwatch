@@ -18,3 +18,5 @@ Blooming Hill is not just an app — it’s an immersive botanical journey. Whet
 
 Visually Captivating:
 With smooth animations, realistic globe rendering, and a clean interface, every interaction feels fluid and modern.
+
+website published at: https://aditisrivastava0225-svg.github.io/Bloomwatch/
