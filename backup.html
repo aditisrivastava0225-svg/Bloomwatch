@@ -2,159 +2,250 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- Include the CesiumJS JavaScript and CSS files -->
+  <title>Blooming Hill</title>
+
+  <!-- Cesium -->
   <script src="https://cesium.com/downloads/cesiumjs/releases/1.134/Build/Cesium/Cesium.js"></script>
   <link href="https://cesium.com/downloads/cesiumjs/releases/1.134/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
-</head>
-<body>
-  <div id="geocoderContainer" style="position:absolute; top:20px; left:20px; z-index:9999; background:white; padding:10px; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.2);">
-  <input type="text" id="search" placeholder="Search for a flower..." style="width:250px; padding:8px; border-radius:8px; border:1px solid #ccc;">
-  <div id="results" style="max-height:300px; overflow:auto; margin-top:10px;"></div>
-</div>
-  <div id="cesiumContainer"></div>
-    <style>
-    input {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      width: 300px;
-      padding: 10px;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-      font-size: 15px;
-      z-index: 999;
-      outline: none;
-      transition: 0.3s;
+
+  <style>
+    html, body, #cesiumContainer {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
 
-    input:focus {
-      border-color: #e63946;
-      box-shadow: 0 0 8px rgba(230, 57, 70, 0.3);
-    }
-
-    .results {
+    /* Flower Search */
+    #geocoderContainer {
       position: absolute;
-      top: 50px;
-      left: 10px;
+      top: 20px;
+      left: 20px;
+      z-index: 9999;
       background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      width: 320px;
-      max-height: 250px;
-      overflow-y: auto;
-      z-index: 999;
       padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      width: 320px;
     }
-
-    .result-item {
-      padding: 6px;
+    #geocoderContainer input {
+      width: 100%;
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      outline: none;
+    }
+    #results {
+      margin-top: 8px;
+      max-height: 300px;
+      overflow: auto;
+    }
+    .flowerResult {
+      padding: 8px;
       cursor: pointer;
-      border-radius: 5px;
+      border-bottom: 1px solid #eee;
     }
+    .flowerResult:hover { background: #f3f3f3; }
 
-    .result-item:hover {
-      background: #eee;
+    /* Weather overlay */
+    .app {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 10000;
+      width: 300px;
+      background: rgba(10,20,40,0.92);
+      color: #e6eef8;
+      border-radius: 14px;
+      padding: 16px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+      font-size: 14px;
+    }
+    .app .title { margin:0; font-weight:700; }
+    .app .subtitle { margin:0; font-size:12px; color:#9aa6b8; }
+    .card {
+      display:flex;
+      gap:12px;
+      align-items:center;
+      margin-top:12px;
+      padding:10px;
+      border-radius:10px;
+      background: rgba(255,255,255,0.03);
+    }
+    .temp { font-size:36px; margin:0; }
+    .desc { color:#9aa6b8; text-transform:capitalize; margin:4px 0; }
+    .meta { color:#9aa6b8; font-size:13px; display:flex; gap:12px; flex-wrap:wrap; }
+    .icon img { width:80px; height:80px; }
+    .error { color:#ffb4b4; background: rgba(255,80,80,0.06); padding:8px; border-radius:8px; margin-top:10px; display:none; }
+    @media (max-width:420px){
+      .app { width: 92%; left:4%; right:4%; }
+      .icon img { width:64px; height:64px; }
+      .temp { font-size:28px; }
     }
   </style>
+</head>
+<body>
+  <!-- Cesium Container -->
+  <div id="cesiumContainer"></div>
+
+  <!-- Flower Search -->
+  <div id="geocoderContainer">
+    <input id="search" type="text" placeholder="Search for a flower (e.g. rose)..." />
+    <div id="results"></div>
+  </div>
+
+  <!-- Weather overlay -->
+  <main class="app" id="weatherApp" role="region" aria-label="Weather">
+    <h3 class="title">Weather — simple</h3>
+    <p class="subtitle">Click a flower to see its weather</p>
+
+    <div id="errorBox" class="error"></div>
+
+    <section id="result" class="card" style="display:none;">
+      <div class="left">
+        <p id="location" style="margin:0;font-weight:700"></p>
+        <h2 id="temp" class="temp">--°C</h2>
+        <p id="desc" class="desc">--</p>
+        <div class="meta">
+          <div>Humidity: <span id="humidity">--</span>%</div>
+          <div>Wind: <span id="wind">--</span> m/s</div>
+          <div>Pressure: <span id="pressure">--</span> hPa</div>
+        </div>
+      </div>
+      <div class="icon">
+        <img id="iconImg" src="" alt="weather icon"/>
+      </div>
+    </section>
+  </main>
+
   <script type="module">
-    // Your access token can be found at: https://ion.cesium.com/tokens.
-    // This is the default access token from your ion account
+    (async () => {
 
-    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJjNTAwZTMyMC0yMzI5LTRkNTQtODU0MS0xNmVkMTdhY2NjMTQiLCJpZCI6MzQ3MTkzLCJpYXQiOjE3NTk1OTU4MjF9.LuVC_WFOM1-jENYq6DgqMYcLml3e9a8eXFGZDuVroBc';
+      // ---------- WEATHER ----------
+      const API_KEY = '3b56ae0997ae643fae1b065096bd709b';
+      const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
-    // Initialize the Cesium Viewer in the HTML element with the `cesiumContainer` ID.
-    const viewer = new Cesium.Viewer('cesiumContainer', {
-      terrain: Cesium.Terrain.fromWorldTerrain(),
-      creditContainer: document.createElement('div'),
-        animation: false,
-        timeline: false,
-        fullscreenButton: false,
-        vrButton: false,
-        homeButton: false,
-        infoBox: false,
-        sceneModePicker: false,
-        navigationHelpButton: false,
-        baseLayerPicker: false,
-        geocoder: false
-        
-    });    
+      const $ = id => document.getElementById(id);
+      const resultEl = $('result');
+      const errorBox = $('errorBox');
+      const locationEl = $('location');
+      const tempEl = $('temp');
+      const descEl = $('desc');
+      const humidityEl = $('humidity');
+      const windEl = $('wind');
+      const pressureEl = $('pressure');
+      const iconImg = $('iconImg');
 
-    // Fly the camera to San Francisco at the given longitude, latitude, and height.
-    viewer.camera.flyTo({
-    destination: Cesium.Cartesian3.fromDegrees(0.0, 0.0, 20000000), // Over equator, very far up (20,000 km)
-    orientation: {
-        heading: Cesium.Math.toRadians(0.0), // pointing along the prime meridian
-        pitch: Cesium.Math.toRadians(-90.0), // straight down
-        roll: 0.0
+      function showError(msg){
+        errorBox.style.display = 'block';
+        errorBox.textContent = msg;
+      }
+      function clearError(){
+        errorBox.style.display = 'none';
+        errorBox.textContent = '';
+      }
 
-    }
-    });
-    var counter = 1;
-    var pinBuilder = new Cesium.PinBuilder();
-    var entity = viewer.entities.add({
-    position : Cesium.Cartesian3.fromDegrees(88.61,27.33,0),
-    label : {
-        text : 'pin' + counter,
-        verticalOrigin : Cesium.VerticalOrigin.TOP
-    },
-    billboard : {
-        image : pinBuilder.fromColor(Cesium.Color.SALMON, 48).toDataURL(),
-        verticalOrigin : Cesium.VerticalOrigin.BOTTOM,
-    }
-    });
+      async function fetchWeather(lat, lon){
+        clearError();
+        resultEl.style.display = 'none';
+        if (!lat || !lon) { showError('Invalid coordinates'); return; }
+        try {
+          const res = await fetch(`${BASE_URL}?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`);
+          if (!res.ok) { showError('Weather fetch failed'); return; }
+          const d = await res.json();
+          renderWeather(d);
+        } catch(e){ console.error(e); showError('Network error'); }
+      }
 
-   let flowers = [];
+      function renderWeather(d){
+        if (!d || !d.main) { showError('Invalid weather data'); return; }
+        locationEl.textContent = `${d.name || ''}, ${d.sys?.country || ''}`;
+        tempEl.textContent = `${Math.round(d.main.temp)}°C`;
+        descEl.textContent = d.weather?.[0]?.description || '--';
+        humidityEl.textContent = d.main.humidity ?? '--';
+        windEl.textContent = d.wind?.speed ?? '--';
+        pressureEl.textContent = d.main.pressure ?? '--';
+        const icon = d.weather?.[0]?.icon;
+        iconImg.src = icon ? `https://openweathermap.org/img/wn/${icon}@2x.png` : '';
+        resultEl.style.display = 'flex';
+      }
 
-fetch("./flowers.json")
-  .then(res => res.json())
-  .then(data => {
-    flowers = data;
-  });
-
-const searchInput = document.getElementById("search");
-const resultsDiv = document.getElementById("results");
-
-searchInput.addEventListener("input", e => {
-  const query = e.target.value.toLowerCase();
-  const filtered = flowers.filter(flower =>
-    flower.name.toLowerCase().includes(query) ||
-    flower.scientific_name.toLowerCase().includes(query) ||
-    flower.region.toLowerCase().includes(query) ||
-    flower.blooming_season.toLowerCase().includes(query)
-  );
-
-  resultsDiv.innerHTML = filtered.map(flower => `
-    <div class="flowerResult" style="padding:5px; cursor:pointer; border-bottom:1px solid #eee;">
-      🌸 ${flower.name} <br><small>${flower.region}</small>
-    </div>
-  `).join("");
-
-  document.querySelectorAll(".flowerResult").forEach((el, i) => {
-    el.addEventListener("click", () => {
-      const f = filtered[i];
-      viewer.entities.add({
-        position: Cesium.Cartesian3.fromDegrees(f.longitude, f.latitude, 0),
-        billboard: {
-          image: 'https://cdn-icons-png.flaticon.com/512/616/616408.png',
-          width: 32,
-          height: 32
-        },
-        label: {
-          text: f.name,
-          verticalOrigin: Cesium.VerticalOrigin.TOP
-        }
+      // ---------- CESIUM & FLOWERS ----------
+      Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJjNTAwZTMyMC0yMzI5LTRkNTQtODU0MS0xNmVkMTdhY2NjMTQiLCJpZCI6MzQ3MTkzLCJpYXQiOjE3NTk1OTU4MjF9.LuVC_WFOM1-jENYq6DgqMYcLml3e9a8eXFGZDuVroBc';
+      const viewer = new Cesium.Viewer('cesiumContainer', {
+        animation:false, timeline:false, fullscreenButton:false,
+        vrButton:false, homeButton:false, infoBox:false,
+        sceneModePicker:false, navigationHelpButton:false, baseLayerPicker:false, geocoder:false
       });
-      viewer.camera.flyTo({
-        destination: Cesium.Cartesian3.fromDegrees(f.longitude, f.latitude, 1000000)
-      });
-    });
-  });
-});
 
-    // Add Cesium OSM Buildings, a global 3D buildings layer.
-    const buildingTileset = await Cesium.createOsmBuildingsAsync();
-    viewer.scene.primitives.add(buildingTileset);   
+      viewer.camera.flyTo({ 
+        destination: Cesium.Cartesian3.fromDegrees(0,0,20000000), 
+        orientation:{ heading:Cesium.Math.toRadians(0), pitch:Cesium.Math.toRadians(-90) }
+      });
+
+      const pinBuilder = new Cesium.PinBuilder();
+      viewer.entities.add({ 
+        position:Cesium.Cartesian3.fromDegrees(88.61,27.33,0), 
+        label:{text:'pin1',verticalOrigin:Cesium.VerticalOrigin.TOP}, 
+        billboard:{ image:pinBuilder.fromColor(Cesium.Color.SALMON,48).toDataURL(), verticalOrigin:Cesium.VerticalOrigin.BOTTOM }
+      });
+
+      try{ viewer.scene.primitives.add(await Cesium.createOsmBuildingsAsync()); } catch(e){ console.warn('OSM buildings failed', e); }
+
+      // ---------- LOAD FLOWERS ----------
+      let flowers = [];
+      try {
+        const data = await (await fetch('./flowers.json')).json();
+        // Ensure flowers is an array
+        if (Array.isArray(data)) flowers = data;
+        else if (Array.isArray(data.features)) flowers = data.features.map(f=>({
+          name: f.properties.name,
+          latitude: f.geometry.coordinates[1],
+          longitude: f.geometry.coordinates[0],
+          region: f.properties.region || ''
+        }));
+      } catch(e){ console.warn('flowers.json not loaded', e); }
+
+      const searchInput = $('search');
+      const resultsDiv = $('results');
+
+      function clearResults(){ resultsDiv.innerHTML=''; }
+
+      searchInput.addEventListener('input', (e)=>{
+        const q = (e.target.value||'').trim().toLowerCase();
+        clearResults();
+        if(!q) return;
+        flowers.filter(f=>(f.name||'').toLowerCase().includes(q)).slice(0,50).forEach(f=>{
+          const item = document.createElement('div');
+          item.className='flowerResult';
+          item.innerHTML=`🌸 <strong>${f.name}</strong><br><small>${f.region||''}</small>`;
+          item.addEventListener('click', ()=>{
+            const lat=Number(f.latitude), lon=Number(f.longitude);
+            if(!isFinite(lat)||!isFinite(lon)){ alert('Invalid coordinates'); return; }
+
+            // Add pin
+            viewer.entities.add({ 
+              position: Cesium.Cartesian3.fromDegrees(lon,lat,0), 
+              billboard:{ image:'https://cdn-icons-png.flaticon.com/512/616/616408.png', width:32, height:32 }, 
+              label:{text:f.name,verticalOrigin:Cesium.VerticalOrigin.TOP}
+            });
+            viewer.camera.flyTo({ destination: Cesium.Cartesian3.fromDegrees(lon,lat,1000000) });
+
+            // Fetch weather automatically
+            fetchWeather(lat, lon);
+
+            clearResults();
+            searchInput.value='';
+          });
+          resultsDiv.appendChild(item);
+        });
+      });
+
+    })();
   </script>
- </div>
 </body>
 </html>

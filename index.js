@@ -80,3 +80,4 @@ import "cesium/Build/Cesium/Widgets/widgets.css";
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
     });
+    
