@@ -1,0 +1,3005 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 5.0447,
+        "longitude": -39.076
+      },
+      "properties": {
+        "flower/plant name": "Rose",
+        "scientific name": "Rosa spp.",
+        "region(s) of distribution": "Worldwide (cultivated)",
+        "blooming season": "Spring–Autumn",
+        "peak flowering months": "Apr–Jun; Sept–Oct",
+        "fruiting period": "Varies by cultivar",
+        "pollinators / notes": "Bees, butterflies; many cultivars; multiple flushes",
+        "plant type": "Herb",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 14.6831,
+        "longitude": -138.7062
+      },
+      "properties": {
+        "flower/plant name": "Sunflower",
+        "scientific name": "Helianthus annuus",
+        "region(s) of distribution": "Native North America; worldwide cultivation",
+        "blooming season": "Summer",
+        "peak flowering months": "July–Aug",
+        "fruiting period": "Late summer",
+        "pollinators / notes": "Bees, beetles; annual",
+        "plant type": "Shrub",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -17.3519,
+        "longitude": 153.8578
+      },
+      "properties": {
+        "flower/plant name": "Hibiscus",
+        "scientific name": "Hibiscus rosa-sinensis",
+        "region(s) of distribution": "Tropics & subtropics worldwide",
+        "blooming season": "Year‑round in tropics",
+        "peak flowering months": "Peak May–Oct",
+        "fruiting period": "Continuous in warm climates",
+        "pollinators / notes": "Short‑lived flowers; hummingbirds/bees",
+        "plant type": "Creeper",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -49.9466,
+        "longitude": -114.7601
+      },
+      "properties": {
+        "flower/plant name": "Marigold",
+        "scientific name": "Tagetes spp.",
+        "region(s) of distribution": "Native Americas; cultivated worldwide",
+        "blooming season": "Spring–Autumn",
+        "peak flowering months": "Oct–Mar (subtropics)",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees, flies; annual/bedding plant",
+        "plant type": "Shrub",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 24.4149,
+        "longitude": 9.3015
+      },
+      "properties": {
+        "flower/plant name": "Lotus",
+        "scientific name": "Nelumbo nucifera",
+        "region(s) of distribution": "Asia; ornamental worldwide",
+        "blooming season": "Summer (monsoon)",
+        "peak flowering months": "June–Aug",
+        "fruiting period": "Autumn",
+        "pollinators / notes": "Aquatic; pollinated by beetles and bees",
+        "plant type": "Tree",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -20.7001,
+        "longitude": 61.7988
+      },
+      "properties": {
+        "flower/plant name": "Jasmine",
+        "scientific name": "Jasminum spp.",
+        "region(s) of distribution": "South/Southeast Asia; tropics",
+        "blooming season": "Summer–Rainy",
+        "peak flowering months": "Apr–Aug",
+        "fruiting period": "Summer–Autumn",
+        "pollinators / notes": "Fragrant; moths and bees",
+        "plant type": "Herb",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 48.0562,
+        "longitude": -25.8542
+      },
+      "properties": {
+        "flower/plant name": "Tulip",
+        "scientific name": "Tulipa gesneriana",
+        "region(s) of distribution": "Central Asia origin; cultivated temperate regions",
+        "blooming season": "Spring",
+        "peak flowering months": "Mar–May",
+        "fruiting period": "Early summer",
+        "pollinators / notes": "Bulbous plant; bees",
+        "plant type": "Climber",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -2.2735,
+        "longitude": -96.4135
+      },
+      "properties": {
+        "flower/plant name": "Magnolia",
+        "scientific name": "Magnolia spp.",
+        "region(s) of distribution": "Asia & Americas",
+        "blooming season": "Late winter–spring",
+        "peak flowering months": "Mar–May",
+        "fruiting period": "Summer",
+        "pollinators / notes": "Beetle‑pollinated; often flowers before leaves",
+        "plant type": "Tree",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -18.884,
+        "longitude": -41.8789
+      },
+      "properties": {
+        "flower/plant name": "Chrysanthemum",
+        "scientific name": "Chrysanthemum spp.",
+        "region(s) of distribution": "East Asia origin; cultivated worldwide",
+        "blooming season": "Autumn–Winter",
+        "peak flowering months": "Nov–Jan",
+        "fruiting period": "Winter",
+        "pollinators / notes": "Short‑day plant; bees",
+        "plant type": "Tree",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 46.3263,
+        "longitude": 98.6952
+      },
+      "properties": {
+        "flower/plant name": "Orchid",
+        "scientific name": "Various (e.g., Dendrobium spp.)",
+        "region(s) of distribution": "Worldwide (many in tropics)",
+        "blooming season": "Species dependent",
+        "peak flowering months": "Mostly spring–summer",
+        "fruiting period": "Species specific",
+        "pollinators / notes": "Specialized pollinators; epiphytic species",
+        "plant type": "Creeper",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -55.5393,
+        "longitude": 40.3025
+      },
+      "properties": {
+        "flower/plant name": "Bougainvillea",
+        "scientific name": "Bougainvillea spp.",
+        "region(s) of distribution": "Native South America; tropics/subtropics",
+        "blooming season": "Year‑round in frost‑free areas",
+        "peak flowering months": "Feb–May & Sep–Oct",
+        "fruiting period": "Continuous in warm climates",
+        "pollinators / notes": "Bracts colored; bees",
+        "plant type": "Herb",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -9.285,
+        "longitude": -131.9827
+      },
+      "properties": {
+        "flower/plant name": "Lavender",
+        "scientific name": "Lavandula angustifolia",
+        "region(s) of distribution": "Mediterranean; temperate gardens worldwide",
+        "blooming season": "Late spring–summer",
+        "peak flowering months": "June–July",
+        "fruiting period": "Late summer",
+        "pollinators / notes": "Attracts bees; aromatic",
+        "plant type": "Tree",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -52.0842,
+        "longitude": 75.3294
+      },
+      "properties": {
+        "flower/plant name": "Cherry Blossom",
+        "scientific name": "Prunus serrulata",
+        "region(s) of distribution": "East Asia; cultivated temperate regions",
+        "blooming season": "Spring",
+        "peak flowering months": "Late Mar–Apr",
+        "fruiting period": "After flowering (small fruits)",
+        "pollinators / notes": "Pollinated by bees; sensitive to temperature",
+        "plant type": "Tree",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 19.2051,
+        "longitude": -168.653
+      },
+      "properties": {
+        "flower/plant name": "Apple Blossom",
+        "scientific name": "Malus domestica",
+        "region(s) of distribution": "Temperate regions worldwide (cultivated)",
+        "blooming season": "Spring",
+        "peak flowering months": "Apr–May",
+        "fruiting period": "Summer (fruit)",
+        "pollinators / notes": "Bees; fruit tree",
+        "plant type": "Tree",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -21.9898,
+        "longitude": -103.4674
+      },
+      "properties": {
+        "flower/plant name": "Peony",
+        "scientific name": "Paeonia spp.",
+        "region(s) of distribution": "Temperate regions (Asia, Europe, N. America)",
+        "blooming season": "Late spring",
+        "peak flowering months": "May–June",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees; large showy flowers",
+        "plant type": "Herb",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -10.416,
+        "longitude": -65.6433
+      },
+      "properties": {
+        "flower/plant name": "Iris",
+        "scientific name": "Iris spp.",
+        "region(s) of distribution": "Northern Hemisphere temperate regions",
+        "blooming season": "Spring–Early summer",
+        "peak flowering months": "Apr–Jun",
+        "fruiting period": "Seed set after flowering",
+        "pollinators / notes": "Bees, butterflies; many garden varieties",
+        "plant type": "Tree",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 7.1279,
+        "longitude": -14.3027
+      },
+      "properties": {
+        "flower/plant name": "Daffodil",
+        "scientific name": "Narcissus spp.",
+        "region(s) of distribution": "Mediterranean origin; temperate gardens",
+        "blooming season": "Early spring",
+        "peak flowering months": "Feb–Apr",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bulbous; bees",
+        "plant type": "Climber",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -36.2237,
+        "longitude": 56.0962
+      },
+      "properties": {
+        "flower/plant name": "Lilac",
+        "scientific name": "Syringa vulgaris",
+        "region(s) of distribution": "Balkans native; temperate gardens worldwide",
+        "blooming season": "Spring",
+        "peak flowering months": "Apr–May",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Fragrant; bees and butterflies",
+        "plant type": "Creeper",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -32.7686,
+        "longitude": -36.6057
+      },
+      "properties": {
+        "flower/plant name": "Camellia",
+        "scientific name": "Camellia japonica",
+        "region(s) of distribution": "East Asia; cultivated worldwide",
+        "blooming season": "Late winter–spring",
+        "peak flowering months": "Feb–Apr",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees; evergreen shrub in mild climates",
+        "plant type": "Herb",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 58.2297,
+        "longitude": 78.3471
+      },
+      "properties": {
+        "flower/plant name": "Azalea/Rhododendron",
+        "scientific name": "Rhododendron spp.",
+        "region(s) of distribution": "Northern Hemisphere, Asia",
+        "blooming season": "Spring",
+        "peak flowering months": "Mar–May",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees; acid‑loving soils",
+        "plant type": "Tree",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -56.4069,
+        "longitude": 130.7285
+      },
+      "properties": {
+        "flower/plant name": "Gardenia",
+        "scientific name": "Gardenia jasminoides",
+        "region(s) of distribution": "Southeast Asia; subtropical gardens",
+        "blooming season": "Summer",
+        "peak flowering months": "May–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Fragrant; moths and bees",
+        "plant type": "Tree",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 50.335,
+        "longitude": -127.5327
+      },
+      "properties": {
+        "flower/plant name": "Foxglove",
+        "scientific name": "Digitalis purpurea",
+        "region(s) of distribution": "Europe native; gardens worldwide",
+        "blooming season": "Late spring–summer",
+        "peak flowering months": "May–Jul",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees (specialized); biennial/short‑lived perennial",
+        "plant type": "Tree",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 48.1888,
+        "longitude": -171.5998
+      },
+      "properties": {
+        "flower/plant name": "Dahlia",
+        "scientific name": "Dahlia spp.",
+        "region(s) of distribution": "Mexico origin; cultivated worldwide",
+        "blooming season": "Summer–Autumn",
+        "peak flowering months": "July–Oct",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees, butterflies; tuberous roots",
+        "plant type": "Herb",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 11.2092,
+        "longitude": 63.0304
+      },
+      "properties": {
+        "flower/plant name": "Verbena",
+        "scientific name": "Verbena spp.",
+        "region(s) of distribution": "Americas origin; worldwide in gardens",
+        "blooming season": "Spring–Autumn",
+        "peak flowering months": "May–Sept",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees and butterflies; nectar rich",
+        "plant type": "Shrub",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -5.9561,
+        "longitude": 144.5857
+      },
+      "properties": {
+        "flower/plant name": "Aster",
+        "scientific name": "Aster spp. (sensu lato)",
+        "region(s) of distribution": "Temperate regions worldwide",
+        "blooming season": "Late summer–autumn",
+        "peak flowering months": "Aug–Oct",
+        "fruiting period": "Autumn",
+        "pollinators / notes": "Bees; many wild species",
+        "plant type": "Herb",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -14.3969,
+        "longitude": 76.6549
+      },
+      "properties": {
+        "flower/plant name": "Zinnia",
+        "scientific name": "Zinnia elegans",
+        "region(s) of distribution": "Mexico native; widely cultivated",
+        "blooming season": "Summer–Autumn",
+        "peak flowering months": "June–Sept",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Attracts butterflies; annual",
+        "plant type": "Tree",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 12.8414,
+        "longitude": 128.9578
+      },
+      "properties": {
+        "flower/plant name": "Poppy",
+        "scientific name": "Papaver spp.",
+        "region(s) of distribution": "Temperate regions worldwide",
+        "blooming season": "Spring–Early summer",
+        "peak flowering months": "Apr–Jun",
+        "fruiting period": "After flowering (capsules)",
+        "pollinators / notes": "Bees; many species",
+        "plant type": "Herb",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -3.6572,
+        "longitude": -23.3645
+      },
+      "properties": {
+        "flower/plant name": "Lilies",
+        "scientific name": "Lilium spp.",
+        "region(s) of distribution": "Temperate regions of Northern Hemisphere",
+        "blooming season": "Summer",
+        "peak flowering months": "June–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees, butterflies; bulbs",
+        "plant type": "Creeper",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 45.7881,
+        "longitude": 43.3825
+      },
+      "properties": {
+        "flower/plant name": "Sugar Maple (flowers)",
+        "scientific name": "Acer saccharum",
+        "region(s) of distribution": "Northeast North America",
+        "blooming season": "Spring",
+        "peak flowering months": "Apr–May",
+        "fruiting period": "Seeds in autumn (samaras)",
+        "pollinators / notes": "Wind‑pollinated; trees' flowering precedes leaf‑out",
+        "plant type": "Climber",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -4.4032,
+        "longitude": 52.1023
+      },
+      "properties": {
+        "flower/plant name": "Oak (flowering catkins)",
+        "scientific name": "Quercus spp.",
+        "region(s) of distribution": "Northern Hemisphere",
+        "blooming season": "Spring",
+        "peak flowering months": "Mar–May",
+        "fruiting period": "Acorn maturation in autumn",
+        "pollinators / notes": "Wind‑pollinated; mast seeding",
+        "plant type": "Tree",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 19.4124,
+        "longitude": -137.3601
+      },
+      "properties": {
+        "flower/plant name": "Willow (catkins)",
+        "scientific name": "Salix spp.",
+        "region(s) of distribution": "Northern Hemisphere",
+        "blooming season": "Early spring",
+        "peak flowering months": "Mar–Apr",
+        "fruiting period": "After flowering (seeds)",
+        "pollinators / notes": "Important early nectar for bees; dioecious species",
+        "plant type": "Tree",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 34.1668,
+        "longitude": 105.4017
+      },
+      "properties": {
+        "flower/plant name": "Fuchsia",
+        "scientific name": "Fuchsia spp.",
+        "region(s) of distribution": "Central/South America & New Zealand",
+        "blooming season": "Summer–Autumn",
+        "peak flowering months": "Jun–Oct",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Hummingbird pollinated in native range; bees elsewhere",
+        "plant type": "Tree",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 25.3365,
+        "longitude": -16.7974
+      },
+      "properties": {
+        "flower/plant name": "Oleander",
+        "scientific name": "Nerium oleander",
+        "region(s) of distribution": "Mediterranean; subtropics",
+        "blooming season": "Late spring–summer",
+        "peak flowering months": "May–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Toxic; bees and insects",
+        "plant type": "Creeper",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 9.537,
+        "longitude": 162.9704
+      },
+      "properties": {
+        "flower/plant name": "Plumeria (Frangipani)",
+        "scientific name": "Plumeria spp.",
+        "region(s) of distribution": "Tropical Americas; cultivated tropics",
+        "blooming season": "Spring–Summer",
+        "peak flowering months": "Apr–Jun",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Fragrant; moths, butterflies",
+        "plant type": "Herb",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -24.1083,
+        "longitude": -53.4624
+      },
+      "properties": {
+        "flower/plant name": "Blackberry (flowers)",
+        "scientific name": "Rubus fruticosus agg.",
+        "region(s) of distribution": "Worldwide temperate regions",
+        "blooming season": "Late spring–summer",
+        "peak flowering months": "May–Jun",
+        "fruiting period": "Summer (fruits)",
+        "pollinators / notes": "Bees; fruits produced by pollination",
+        "plant type": "Tree",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 50.0597,
+        "longitude": 40.8603
+      },
+      "properties": {
+        "flower/plant name": "Bluebell",
+        "scientific name": "Hyacinthoides non-scripta",
+        "region(s) of distribution": "Europe",
+        "blooming season": "Spring",
+        "peak flowering months": "Apr–May",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees; woodland indicator species",
+        "plant type": "Shrub",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 30.8545,
+        "longitude": 110.1111
+      },
+      "properties": {
+        "flower/plant name": "Hawthorn",
+        "scientific name": "Crataegus monogyna",
+        "region(s) of distribution": "Europe & Asia; introduced elsewhere",
+        "blooming season": "Spring",
+        "peak flowering months": "Apr–May",
+        "fruiting period": "Summer (haws)",
+        "pollinators / notes": "Bees; important hedgerow tree",
+        "plant type": "Climber",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 33.8401,
+        "longitude": -114.176
+      },
+      "properties": {
+        "flower/plant name": "Cornflower",
+        "scientific name": "Centaurea cyanus",
+        "region(s) of distribution": "Europe (wildflower); cultivated worldwide",
+        "blooming season": "Late spring–summer",
+        "peak flowering months": "May–Jul",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees and butterflies; meadow flower",
+        "plant type": "Tree",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 1.4347,
+        "longitude": -13.4951
+      },
+      "properties": {
+        "flower/plant name": "Calendula",
+        "scientific name": "Calendula officinalis",
+        "region(s) of distribution": "Mediterranean origin; cultivated worldwide",
+        "blooming season": "Spring–Autumn",
+        "peak flowering months": "Mar–Oct",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Pollinators: bees; medicinal uses",
+        "plant type": "Tree",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -54.452,
+        "longitude": -13.0683
+      },
+      "properties": {
+        "flower/plant name": "Pansy/Viola",
+        "scientific name": "Viola spp.",
+        "region(s) of distribution": "Northern Hemisphere",
+        "blooming season": "Spring–Autumn",
+        "peak flowering months": "Mar–May; Sep–Oct",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees; edible flowers in cultivars",
+        "plant type": "Shrub",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -29.3965,
+        "longitude": 1.3384
+      },
+      "properties": {
+        "flower/plant name": "Begonia",
+        "scientific name": "Begonia spp.",
+        "region(s) of distribution": "Tropics and subtropics worldwide",
+        "blooming season": "Year‑round in suitable climates",
+        "peak flowering months": "Varies by species",
+        "fruiting period": "Varies",
+        "pollinators / notes": "Many ornamental species; shade tolerant",
+        "plant type": "Shrub",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 38.65,
+        "longitude": -54.4483
+      },
+      "properties": {
+        "flower/plant name": "Snapdragon",
+        "scientific name": "Antirrhinum majus",
+        "region(s) of distribution": "Mediterranean origin; gardens worldwide",
+        "blooming season": "Spring–Autumn",
+        "peak flowering months": "May–Sep",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees; nectar guides",
+        "plant type": "Creeper",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -50.0202,
+        "longitude": -90.5403
+      },
+      "properties": {
+        "flower/plant name": "Salvia",
+        "scientific name": "Salvia spp. (e.g., S. officinalis)",
+        "region(s) of distribution": "Worldwide (many species Mediterranean/Americas)",
+        "blooming season": "Spring–Summer",
+        "peak flowering months": "May–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Attracts bees and hummingbirds depending on species",
+        "plant type": "Shrub",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -48.3503,
+        "longitude": 41.6425
+      },
+      "properties": {
+        "flower/plant name": "Echinacea (Coneflower)",
+        "scientific name": "Echinacea purpurea",
+        "region(s) of distribution": "North America native; cultivated worldwide",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees and butterflies; medicinal uses",
+        "plant type": "Herb",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 10.4876,
+        "longitude": -5.624
+      },
+      "properties": {
+        "flower/plant name": "Camassia",
+        "scientific name": "Camassia leichtlinii",
+        "region(s) of distribution": "North America",
+        "blooming season": "Spring",
+        "peak flowering months": "Apr–May",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees; bulbous perennial",
+        "plant type": "Herb",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 25.1475,
+        "longitude": 77.9129
+      },
+      "properties": {
+        "flower/plant name": "Clematis",
+        "scientific name": "Clematis spp.",
+        "region(s) of distribution": "Temperate regions worldwide",
+        "blooming season": "Spring–Autumn depending on species",
+        "peak flowering months": "Apr–Sep",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Climbing vines; varied flowering times",
+        "plant type": "Creeper",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -6.5334,
+        "longitude": -101.9306
+      },
+      "properties": {
+        "flower/plant name": "Morning Glory",
+        "scientific name": "Ipomoea spp.",
+        "region(s) of distribution": "Tropical & temperate regions",
+        "blooming season": "Summer–Autumn",
+        "peak flowering months": "Jun–Sep",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Opens in morning; bees and moths",
+        "plant type": "Climber",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -13.8699,
+        "longitude": -124.6074
+      },
+      "properties": {
+        "flower/plant name": "Sweet Pea",
+        "scientific name": "Lathyrus odoratus",
+        "region(s) of distribution": "Mediterranean origin; cultivated",
+        "blooming season": "Spring–Early summer",
+        "peak flowering months": "Apr–Jun",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Fragrant; bees",
+        "plant type": "Climber",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 18.5292,
+        "longitude": -11.6438
+      },
+      "properties": {
+        "flower/plant name": "Primrose",
+        "scientific name": "Primula vulgaris",
+        "region(s) of distribution": "Europe & temperate Asia",
+        "blooming season": "Spring",
+        "peak flowering months": "Mar–May",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees; woodland and grassland species",
+        "plant type": "Climber",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -15.9386,
+        "longitude": 129.0177
+      },
+      "properties": {
+        "flower/plant name": "Coneflower (Rudbeckia)",
+        "scientific name": "Rudbeckia hirta",
+        "region(s) of distribution": "North America",
+        "blooming season": "Summer–Autumn",
+        "peak flowering months": "Jun–Sep",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Attracts pollinators; hardy annual/perennial",
+        "plant type": "Creeper",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 22.4211,
+        "longitude": -114.0835
+      },
+      "properties": {
+        "flower/plant name": "Rhododendron (Azalea)",
+        "scientific name": "Rhododendron spp.",
+        "region(s) of distribution": "Asia & N. America",
+        "blooming season": "Spring",
+        "peak flowering months": "Mar–May",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees; acid soils",
+        "plant type": "Herb",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 13.1128,
+        "longitude": -53.8315
+      },
+      "properties": {
+        "flower/plant name": "Garden Lupin",
+        "scientific name": "Lupinus spp.",
+        "region(s) of distribution": "Americas & Mediterranean",
+        "blooming season": "Spring–Summer",
+        "peak flowering months": "May–Jul",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Nitrogen‑fixing legumes; bees",
+        "plant type": "Tree",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -10.8587,
+        "longitude": -152.5547
+      },
+      "properties": {
+        "flower/plant name": "Wisteria",
+        "scientific name": "Wisteria sinensis",
+        "region(s) of distribution": "China & Japan origin; ornamental worldwide",
+        "blooming season": "Spring",
+        "peak flowering months": "Apr–May",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Fragrant racemes; bees and bees/wasps",
+        "plant type": "Climber",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 21.8884,
+        "longitude": -92.1829
+      },
+      "properties": {
+        "flower/plant name": "Verbascum (Mullein)",
+        "scientific name": "Verbascum spp.",
+        "region(s) of distribution": "Europe & Asia",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees; tall flowering spikes",
+        "plant type": "Tree",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 41.1231,
+        "longitude": 158.6236
+      },
+      "properties": {
+        "flower/plant name": "Hellebore",
+        "scientific name": "Helleborus spp.",
+        "region(s) of distribution": "Europe & Asia",
+        "blooming season": "Winter–Spring",
+        "peak flowering months": "Jan–Mar",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Early flowering; pollinators include bees",
+        "plant type": "Tree",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 25.7472,
+        "longitude": -55.2213
+      },
+      "properties": {
+        "flower/plant name": "Cardinal Flower",
+        "scientific name": "Lobelia cardinalis",
+        "region(s) of distribution": "Americas",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Sep",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Hummingbird‑pollinated",
+        "plant type": "Herb",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 24.3275,
+        "longitude": 34.537
+      },
+      "properties": {
+        "flower/plant name": "Yarrow",
+        "scientific name": "Achillea millefolium",
+        "region(s) of distribution": "Europe & temperate Asia; circumboreal",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees; drought tolerant",
+        "plant type": "Tree",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 13.6544,
+        "longitude": -8.3178
+      },
+      "properties": {
+        "flower/plant name": "Monkshood",
+        "scientific name": "Aconitum napellus",
+        "region(s) of distribution": "Europe & Asia",
+        "blooming season": "Late summer",
+        "peak flowering months": "Aug–Sep",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Toxic; bees and bumblebees",
+        "plant type": "Climber",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -8.7256,
+        "longitude": 167.2795
+      },
+      "properties": {
+        "flower/plant name": "Buttercup",
+        "scientific name": "Ranunculus spp.",
+        "region(s) of distribution": "Northern Hemisphere",
+        "blooming season": "Spring–Early summer",
+        "peak flowering months": "Apr–Jun",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees and beetles",
+        "plant type": "Tree",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 40.1607,
+        "longitude": 51.4845
+      },
+      "properties": {
+        "flower/plant name": "Bluebonnet",
+        "scientific name": "Lupinus texensis",
+        "region(s) of distribution": "Texas and parts of North America",
+        "blooming season": "Spring",
+        "peak flowering months": "Mar–Apr",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees; state flower of Texas",
+        "plant type": "Shrub",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 53.0726,
+        "longitude": 17.4614
+      },
+      "properties": {
+        "flower/plant name": "Agapanthus",
+        "scientific name": "Agapanthus africanus",
+        "region(s) of distribution": "South Africa; cultivated worldwide",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Aug (in southern hemisphere Jan–Mar)",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees; clump forming",
+        "plant type": "Herb",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -23.9879,
+        "longitude": 152.6548
+      },
+      "properties": {
+        "flower/plant name": "Oleaceae - Jasmine (star)",
+        "scientific name": "Trachelospermum jasminoides",
+        "region(s) of distribution": "Asia; subtropical gardens",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Fragrant; vines",
+        "plant type": "Creeper",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 0.5363,
+        "longitude": -64.5078
+      },
+      "properties": {
+        "flower/plant name": "Saffron Crocus",
+        "scientific name": "Crocus sativus",
+        "region(s) of distribution": "Mediterranean & W. Asia cultivation",
+        "blooming season": "Autumn (saffron blooms)",
+        "peak flowering months": "Oct–Nov",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Insects; valued spice",
+        "plant type": "Herb",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -39.7093,
+        "longitude": -86.1398
+      },
+      "properties": {
+        "flower/plant name": "Hosta (flowers)",
+        "scientific name": "Hosta spp.",
+        "region(s) of distribution": "East Asia; cultivated worldwide",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Attracts bees; shade‑tolerant foliage plant",
+        "plant type": "Climber",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 27.7515,
+        "longitude": -158.5451
+      },
+      "properties": {
+        "flower/plant name": "Skunk Cabbage (flowering)",
+        "scientific name": "Symplocarpus foetidus",
+        "region(s) of distribution": "Eastern N. America",
+        "blooming season": "Early spring",
+        "peak flowering months": "Mar–Apr",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Thermogenic flowers; flies/beetles",
+        "plant type": "Climber",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -4.1624,
+        "longitude": 123.8718
+      },
+      "properties": {
+        "flower/plant name": "Crocus",
+        "scientific name": "Crocus spp.",
+        "region(s) of distribution": "Mediterranean & temperate regions",
+        "blooming season": "Early spring or autumn (varies)",
+        "peak flowering months": "Feb–Apr; Oct–Nov (autumn crocuses)",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees; bulbous",
+        "plant type": "Herb",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -6.6305,
+        "longitude": 23.0449
+      },
+      "properties": {
+        "flower/plant name": "Ranunculus (Persian buttercup)",
+        "scientific name": "Ranunculus asiaticus",
+        "region(s) of distribution": "Mediterranean origin; cultivated",
+        "blooming season": "Spring",
+        "peak flowering months": "Mar–May",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Popular cut flower; bees",
+        "plant type": "Shrub",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 44.9707,
+        "longitude": 113.3728
+      },
+      "properties": {
+        "flower/plant name": "Canna Lily",
+        "scientific name": "Canna indica",
+        "region(s) of distribution": "Tropical Americas; cultivated worldwide",
+        "blooming season": "Summer–Autumn",
+        "peak flowering months": "Jun–Sep",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Attracts hummingbirds and bees",
+        "plant type": "Climber",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -7.0475,
+        "longitude": 108.597
+      },
+      "properties": {
+        "flower/plant name": "Bottlebrush",
+        "scientific name": "Callistemon spp. (Melaleuca)",
+        "region(s) of distribution": "Australia; tropical & subtropical gardens",
+        "blooming season": "Spring–Summer",
+        "peak flowering months": "Sep–Dec (southern hemisphere)",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bird‑pollinated (honeyeaters)",
+        "plant type": "Herb",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 21.3112,
+        "longitude": 126.793
+      },
+      "properties": {
+        "flower/plant name": "Grevillea",
+        "scientific name": "Grevillea spp.",
+        "region(s) of distribution": "Australia",
+        "blooming season": "Varied (many species bloom winter–spring)",
+        "peak flowering months": "Varies",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bird‑pollinated; nectar rich",
+        "plant type": "Herb",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -32.7178,
+        "longitude": 159.3149
+      },
+      "properties": {
+        "flower/plant name": "Protea",
+        "scientific name": "Protea spp.",
+        "region(s) of distribution": "South Africa",
+        "blooming season": "Winter–Spring (southern hemisphere)",
+        "peak flowering months": "Aug–Oct",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bird and insect pollinated; iconic fynbos plant",
+        "plant type": "Shrub",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 19.0736,
+        "longitude": -132.6537
+      },
+      "properties": {
+        "flower/plant name": "Mimosa (silk tree)",
+        "scientific name": "Albizia julibrissin",
+        "region(s) of distribution": "Asia; ornamental worldwide",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Pollinated by bees and moths; sensitive to cold",
+        "plant type": "Tree",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 23.6947,
+        "longitude": -97.2353
+      },
+      "properties": {
+        "flower/plant name": "Lantana",
+        "scientific name": "Lantana camara",
+        "region(s) of distribution": "Americas origin; invasive in many tropics",
+        "blooming season": "Year‑round in warm areas",
+        "peak flowering months": "Peaks in warm months",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Attracts butterflies; invasive potential",
+        "plant type": "Climber",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 47.4471,
+        "longitude": -98.7912
+      },
+      "properties": {
+        "flower/plant name": "Bottle Gentian",
+        "scientific name": "Gentiana spp.",
+        "region(s) of distribution": "Mountain regions in Europe & Asia",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees and sometimes butterflies",
+        "plant type": "Tree",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -17.959,
+        "longitude": 75.9364
+      },
+      "properties": {
+        "flower/plant name": "Honeysuckle",
+        "scientific name": "Lonicera spp.",
+        "region(s) of distribution": "Northern Hemisphere",
+        "blooming season": "Spring–Summer",
+        "peak flowering months": "May–Jul",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Fragrant; moths and bees",
+        "plant type": "Climber",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 51.2436,
+        "longitude": -74.5433
+      },
+      "properties": {
+        "flower/plant name": "Evening Primrose",
+        "scientific name": "Oenothera biennis",
+        "region(s) of distribution": "North America; introduced elsewhere",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Opens in evening; moth pollinated",
+        "plant type": "Herb",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 33.5387,
+        "longitude": -162.495
+      },
+      "properties": {
+        "flower/plant name": "Borage",
+        "scientific name": "Borago officinalis",
+        "region(s) of distribution": "Mediterranean; cultivated worldwide",
+        "blooming season": "Spring–Summer",
+        "peak flowering months": "May–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees; herbaceous plant",
+        "plant type": "Tree",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 1.6919,
+        "longitude": 104.0572
+      },
+      "properties": {
+        "flower/plant name": "Sweetgum (flowers)",
+        "scientific name": "Liquidambar styraciflua",
+        "region(s) of distribution": "North America & Asia",
+        "blooming season": "Spring",
+        "peak flowering months": "Apr–May",
+        "fruiting period": "Seed capsules mature autumn",
+        "pollinators / notes": "Wind and insect pollinated",
+        "plant type": "Herb",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 10.9641,
+        "longitude": 17.7689
+      },
+      "properties": {
+        "flower/plant name": "Amaryllis",
+        "scientific name": "Hippeastrum spp.",
+        "region(s) of distribution": "South America; cultivated worldwide",
+        "blooming season": "Late winter–spring (forced)",
+        "peak flowering months": "Feb–Apr",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bulbous; attractive large flowers",
+        "plant type": "Herb",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 54.3907,
+        "longitude": 2.0301
+      },
+      "properties": {
+        "flower/plant name": "Spider Flower",
+        "scientific name": "Cleome hassleriana",
+        "region(s) of distribution": "South America; gardens worldwide",
+        "blooming season": "Summer–Autumn",
+        "peak flowering months": "Jun–Sep",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Attracts bees and butterflies",
+        "plant type": "Tree",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 55.722,
+        "longitude": -127.4514
+      },
+      "properties": {
+        "flower/plant name": "Oxeye Daisy",
+        "scientific name": "Leucanthemum vulgare",
+        "region(s) of distribution": "Europe native; widespread",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees and butterflies",
+        "plant type": "Shrub",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -45.2226,
+        "longitude": 19.9124
+      },
+      "properties": {
+        "flower/plant name": "Shasta Daisy",
+        "scientific name": "Leucanthemum × superbum",
+        "region(s) of distribution": "Garden hybrid; temperate gardens",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees; popular garden perennial",
+        "plant type": "Creeper",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -2.8903,
+        "longitude": 129.7346
+      },
+      "properties": {
+        "flower/plant name": "Sage (flowering)",
+        "scientific name": "Salvia officinalis",
+        "region(s) of distribution": "Mediterranean; herb gardens worldwide",
+        "blooming season": "Spring–Summer",
+        "peak flowering months": "May–Jul",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Attracts bees; aromatic herb",
+        "plant type": "Tree",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 16.1772,
+        "longitude": -15.7103
+      },
+      "properties": {
+        "flower/plant name": "Myrtle",
+        "scientific name": "Myrtus communis",
+        "region(s) of distribution": "Mediterranean",
+        "blooming season": "Summer",
+        "peak flowering months": "May–Jul",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Fragrant; small white flowers",
+        "plant type": "Climber",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -35.0994,
+        "longitude": -32.1122
+      },
+      "properties": {
+        "flower/plant name": "Persimmon (flowers)",
+        "scientific name": "Diospyros kaki",
+        "region(s) of distribution": "East Asia; cultivated",
+        "blooming season": "Spring–Summer",
+        "peak flowering months": "Apr–Jun",
+        "fruiting period": "Fruit in autumn",
+        "pollinators / notes": "Bees; trees produce edible fruit",
+        "plant type": "Creeper",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 14.4386,
+        "longitude": -55.9634
+      },
+      "properties": {
+        "flower/plant name": "Freesia",
+        "scientific name": "Freesia spp.",
+        "region(s) of distribution": "South Africa origin; cut flower worldwide",
+        "blooming season": "Spring",
+        "peak flowering months": "Mar–May",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Fragrant; bees",
+        "plant type": "Climber",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -46.8439,
+        "longitude": 77.6733
+      },
+      "properties": {
+        "flower/plant name": "Gazania",
+        "scientific name": "Gazania rigens",
+        "region(s) of distribution": "South Africa; warm temperate gardens",
+        "blooming season": "Spring–Autumn",
+        "peak flowering months": "Apr–Oct",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Sun‑loving; attracts bees",
+        "plant type": "Shrub",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 24.2619,
+        "longitude": 90.8184
+      },
+      "properties": {
+        "flower/plant name": "Impatiens",
+        "scientific name": "Impatiens walleriana",
+        "region(s) of distribution": "Tropical Africa origin; shade gardens worldwide",
+        "blooming season": "Spring–Autumn in frost‑free areas",
+        "peak flowering months": "May–Sep",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Shade tolerant; bees and butterflies",
+        "plant type": "Shrub",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -0.7851,
+        "longitude": -14.4554
+      },
+      "properties": {
+        "flower/plant name": "Periwinkle (Catharanthus)",
+        "scientific name": "Catharanthus roseus",
+        "region(s) of distribution": "Madagascar origin; tropical gardens worldwide",
+        "blooming season": "Year‑round in warm climates",
+        "peak flowering months": "Varies",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Attracts butterflies; medicinal alkaloids",
+        "plant type": "Tree",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -21.1881,
+        "longitude": -144.2981
+      },
+      "properties": {
+        "flower/plant name": "Nerine (Guernsey Lily)",
+        "scientific name": "Nerine bowdenii",
+        "region(s) of distribution": "South Africa",
+        "blooming season": "Autumn",
+        "peak flowering months": "Sep–Oct",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bulbous; autumn-flowering",
+        "plant type": "Herb",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 29.4118,
+        "longitude": 163.8309
+      },
+      "properties": {
+        "flower/plant name": "Scabiosa (Pincushion Flower)",
+        "scientific name": "Scabiosa atropurpurea",
+        "region(s) of distribution": "Europe & Asia",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Sep",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees and butterflies",
+        "plant type": "Tree",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -6.8588,
+        "longitude": -90.3572
+      },
+      "properties": {
+        "flower/plant name": "Tithonia (Mexican Sunflower)",
+        "scientific name": "Tithonia rotundifolia",
+        "region(s) of distribution": "Mexico origin; warm gardens",
+        "blooming season": "Summer–Autumn",
+        "peak flowering months": "Jul–Oct",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Attracts butterflies",
+        "plant type": "Shrub",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -58.5724,
+        "longitude": 27.1239
+      },
+      "properties": {
+        "flower/plant name": "Gaura",
+        "scientific name": "Gaura lindheimeri",
+        "region(s) of distribution": "North America origin; gardens",
+        "blooming season": "Summer–Autumn",
+        "peak flowering months": "May–Sep",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Long‑blooming; delicate flowers",
+        "plant type": "Herb",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 17.3697,
+        "longitude": -149.1537
+      },
+      "properties": {
+        "flower/plant name": "Heuchera (Coral Bells)",
+        "scientific name": "Heuchera spp.",
+        "region(s) of distribution": "North America",
+        "blooming season": "Late spring–summer",
+        "peak flowering months": "May–Jul",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Foliage plant with airy flower spikes",
+        "plant type": "Shrub",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 31.7124,
+        "longitude": -94.2088
+      },
+      "properties": {
+        "flower/plant name": "Heath (Erica)",
+        "scientific name": "Erica spp.",
+        "region(s) of distribution": "Europe & Africa (fynbos)",
+        "blooming season": "Winter–Spring",
+        "peak flowering months": "Nov–Mar (southern hemisphere Oct–Dec)",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bell‑shaped flowers; bees",
+        "plant type": "Shrub",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -33.15,
+        "longitude": 124.7042
+      },
+      "properties": {
+        "flower/plant name": "Knapweed",
+        "scientific name": "Centaurea nigra",
+        "region(s) of distribution": "Europe",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees and butterflies; meadow plant",
+        "plant type": "Tree",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -34.9691,
+        "longitude": -26.3691
+      },
+      "properties": {
+        "flower/plant name": "Jacob's Ladder",
+        "scientific name": "Polemonium caeruleum",
+        "region(s) of distribution": "Europe & Asia",
+        "blooming season": "Spring–Summer",
+        "peak flowering months": "May–Jul",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees; woodland plant",
+        "plant type": "Climber",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 22.5948,
+        "longitude": -102.2305
+      },
+      "properties": {
+        "flower/plant name": "Lemon Flower",
+        "scientific name": "Citrus limon",
+        "region(s) of distribution": "Mediterranean & subtropical",
+        "blooming season": "Spring",
+        "peak flowering months": "Mar–May",
+        "fruiting period": "Summer (fruit)",
+        "pollinators / notes": "Highly fragrant; bees and other insects",
+        "plant type": "Herb",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 33.6943,
+        "longitude": -68.8237
+      },
+      "properties": {
+        "flower/plant name": "Orange Blossom",
+        "scientific name": "Citrus sinensis",
+        "region(s) of distribution": "Subtropical",
+        "blooming season": "Spring",
+        "peak flowering months": "Mar–Apr",
+        "fruiting period": "Summer (fruit)",
+        "pollinators / notes": "Bees; highly fragrant",
+        "plant type": "Creeper",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 46.5474,
+        "longitude": -13.9671
+      },
+      "properties": {
+        "flower/plant name": "Pistachio (flowers)",
+        "scientific name": "Pistacia vera",
+        "region(s) of distribution": "Central Asia; cultivated",
+        "blooming season": "Spring",
+        "peak flowering months": "Apr–May",
+        "fruiting period": "Fruit in late summer/autumn",
+        "pollinators / notes": "Wind‑pollinated",
+        "plant type": "Shrub",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -3.0094,
+        "longitude": -141.9339
+      },
+      "properties": {
+        "flower/plant name": "Citrus (various blossoms)",
+        "scientific name": "Citrus spp.",
+        "region(s) of distribution": "Tropical & subtropical",
+        "blooming season": "Spring",
+        "peak flowering months": "Mar–May",
+        "fruiting period": "Summer fruits",
+        "pollinators / notes": "Bees; fragrant blossoms",
+        "plant type": "Creeper",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -33.7312,
+        "longitude": -155.8341
+      },
+      "properties": {
+        "flower/plant name": "Elderflower",
+        "scientific name": "Sambucus nigra",
+        "region(s) of distribution": "Europe & temperate Asia",
+        "blooming season": "Late spring–early summer",
+        "peak flowering months": "May–Jun",
+        "fruiting period": "After flowering (berries summer)",
+        "pollinators / notes": "Bees; used for cordials and culinary use",
+        "plant type": "Climber",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 26.7494,
+        "longitude": -87.1109
+      },
+      "properties": {
+        "flower/plant name": "Serviceberry",
+        "scientific name": "Amelanchier spp.",
+        "region(s) of distribution": "Temperate N. Hemisphere",
+        "blooming season": "Spring",
+        "peak flowering months": "Apr–May",
+        "fruiting period": "Summer (pome fruits)",
+        "pollinators / notes": "Bees; early spring nectar",
+        "plant type": "Climber",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 41.4738,
+        "longitude": 140.949
+      },
+      "properties": {
+        "flower/plant name": "Holly (flowers)",
+        "scientific name": "Ilex spp.",
+        "region(s) of distribution": "Temperate regions",
+        "blooming season": "Spring",
+        "peak flowering months": "Apr–May",
+        "fruiting period": "Autumn/Winter (berries)",
+        "pollinators / notes": "Insect pollinated; dioecious (male/female plants)",
+        "plant type": "Tree",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 59.8019,
+        "longitude": -32.6101
+      },
+      "properties": {
+        "flower/plant name": "Oleaceae - Olive (flowers)",
+        "scientific name": "Olea europaea",
+        "region(s) of distribution": "Mediterranean",
+        "blooming season": "Spring",
+        "peak flowering months": "Apr–May",
+        "fruiting period": "Autumn (drupes ripen)",
+        "pollinators / notes": "Wind and insect pollinated; agricultural crop",
+        "plant type": "Tree",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 48.5213,
+        "longitude": -56.4329
+      },
+      "properties": {
+        "flower/plant name": "Black Locust",
+        "scientific name": "Robinia pseudoacacia",
+        "region(s) of distribution": "North America; planted worldwide",
+        "blooming season": "Late spring",
+        "peak flowering months": "May–Jun",
+        "fruiting period": "Seed pods after flowering",
+        "pollinators / notes": "Bee‑friendly; fragrant racemes",
+        "plant type": "Climber",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -34.5973,
+        "longitude": 121.0579
+      },
+      "properties": {
+        "flower/plant name": "Manuka (Tea Tree)",
+        "scientific name": "Leptospermum scoparium",
+        "region(s) of distribution": "New Zealand & Australia",
+        "blooming season": "Spring–Summer",
+        "peak flowering months": "Oct–Dec (southern hemisphere)",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Important for honey production; bees",
+        "plant type": "Shrub",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 8.5698,
+        "longitude": -108.6992
+      },
+      "properties": {
+        "flower/plant name": "Kaffir Lily",
+        "scientific name": "Clivia miniata",
+        "region(s) of distribution": "South Africa; houseplant worldwide",
+        "blooming season": "Spring",
+        "peak flowering months": "Mar–May",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Shade‑tolerant; bees",
+        "plant type": "Herb",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 59.5973,
+        "longitude": -84.8408
+      },
+      "properties": {
+        "flower/plant name": "Bottlebrush (Callistemon)",
+        "scientific name": "Callistemon citrinus",
+        "region(s) of distribution": "Australia; subtropical gardens",
+        "blooming season": "Spring–Summer",
+        "peak flowering months": "Sep–Dec (southern hemisphere)",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bird‑pollinated; showy stamens",
+        "plant type": "Climber",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -28.4642,
+        "longitude": -139.6197
+      },
+      "properties": {
+        "flower/plant name": "Japanese Anemone",
+        "scientific name": "Anemone hupehensis",
+        "region(s) of distribution": "East Asia; gardens",
+        "blooming season": "Late summer–Autumn",
+        "peak flowering months": "Aug–Oct",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees; fall interest",
+        "plant type": "Herb",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 37.4596,
+        "longitude": 150.786
+      },
+      "properties": {
+        "flower/plant name": "Coriander (Cilantro) flowers",
+        "scientific name": "Coriandrum sativum",
+        "region(s) of distribution": "Worldwide (cultivated)",
+        "blooming season": "Summer (in many climates)",
+        "peak flowering months": "May–Jul",
+        "fruiting period": "Seeds (coriander) after flowering",
+        "pollinators / notes": "Small white umbels; pollinated by small insects",
+        "plant type": "Shrub",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -47.7674,
+        "longitude": -177.167
+      },
+      "properties": {
+        "flower/plant name": "Caper Flower",
+        "scientific name": "Capparis spinosa",
+        "region(s) of distribution": "Mediterranean & warm regions",
+        "blooming season": "Late spring–summer",
+        "peak flowering months": "May–Jul",
+        "fruiting period": "After flowering (capers)",
+        "pollinators / notes": "Bees; unique large flowers",
+        "plant type": "Herb",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -17.2796,
+        "longitude": 43.7166
+      },
+      "properties": {
+        "flower/plant name": "Passionflower",
+        "scientific name": "Passiflora spp.",
+        "region(s) of distribution": "Tropical Americas; subtropical gardens",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Specialized pollinators including bees and bats",
+        "plant type": "Climber",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 49.1283,
+        "longitude": 82.9602
+      },
+      "properties": {
+        "flower/plant name": "Hemp (industrial) - flowers",
+        "scientific name": "Cannabis sativa",
+        "region(s) of distribution": "Worldwide cultivation",
+        "blooming season": "Late summer–autumn",
+        "peak flowering months": "Aug–Oct",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Dioecious; wind or insect pollinated depending on cultivar",
+        "plant type": "Tree",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 21.8296,
+        "longitude": -63.7229
+      },
+      "properties": {
+        "flower/plant name": "Clary Sage",
+        "scientific name": "Salvia sclarea",
+        "region(s) of distribution": "Mediterranean",
+        "blooming season": "Late spring–summer",
+        "peak flowering months": "May–Jul",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Aromatic; bees",
+        "plant type": "Tree",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 7.2375,
+        "longitude": 103.1706
+      },
+      "properties": {
+        "flower/plant name": "Spanish Broom",
+        "scientific name": "Spartium junceum",
+        "region(s) of distribution": "Mediterranean",
+        "blooming season": "Spring–Summer",
+        "peak flowering months": "May–Jun",
+        "fruiting period": "After flowering (pods)",
+        "pollinators / notes": "Fragrant yellow flowers; bees",
+        "plant type": "Shrub",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 41.1307,
+        "longitude": 19.8951
+      },
+      "properties": {
+        "flower/plant name": "Cedar (flowers, cones)",
+        "scientific name": "Cedrus spp.",
+        "region(s) of distribution": "Mediterranean & Himalaya",
+        "blooming season": "Spring",
+        "peak flowering months": "Mar–May",
+        "fruiting period": "Cones mature later",
+        "pollinators / notes": "Wind‑pollinated; ornamental trees",
+        "plant type": "Tree",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -33.3374,
+        "longitude": -105.5256
+      },
+      "properties": {
+        "flower/plant name": "Aloe (flowering)",
+        "scientific name": "Aloe spp.",
+        "region(s) of distribution": "Africa; cultivated worldwide as succulent",
+        "blooming season": "Winter–Spring or summer depending on species",
+        "peak flowering months": "Varies",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Birds and insects; succulent",
+        "plant type": "Tree",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 22.5224,
+        "longitude": 155.3863
+      },
+      "properties": {
+        "flower/plant name": "Saponaria (Soapwort)",
+        "scientific name": "Saponaria officinalis",
+        "region(s) of distribution": "Europe & Asia",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees and butterflies",
+        "plant type": "Creeper",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 35.1249,
+        "longitude": 10.6926
+      },
+      "properties": {
+        "flower/plant name": "Arum (Arisaema/Arum)",
+        "scientific name": "Arum spp.",
+        "region(s) of distribution": "Europe & Asia",
+        "blooming season": "Spring",
+        "peak flowering months": "Apr–May",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Unique inflorescences; fly‑pollinated in some species",
+        "plant type": "Creeper",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 25.3908,
+        "longitude": 55.5225
+      },
+      "properties": {
+        "flower/plant name": "Lobelia (annual)",
+        "scientific name": "Lobelia erinus",
+        "region(s) of distribution": "Africa origin; gardens worldwide",
+        "blooming season": "Spring–Autumn",
+        "peak flowering months": "May–Sep",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Attracts hummingbirds and bees",
+        "plant type": "Climber",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -3.6375,
+        "longitude": 159.3389
+      },
+      "properties": {
+        "flower/plant name": "Spekboom (Portulacaria afra) - flowers",
+        "scientific name": "Portulacaria afra",
+        "region(s) of distribution": "South Africa",
+        "blooming season": "Spring",
+        "peak flowering months": "Sep–Nov (southern hemisphere)",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Small flowers; succulent shrub",
+        "plant type": "Tree",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -22.989,
+        "longitude": -78.6007
+      },
+      "properties": {
+        "flower/plant name": "Yam (Dioscorea) - flowers",
+        "scientific name": "Dioscorea spp.",
+        "region(s) of distribution": "Tropical regions",
+        "blooming season": "Varies",
+        "peak flowering months": "Varies",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Dioecious vines; pollination varied",
+        "plant type": "Creeper",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 9.6236,
+        "longitude": 126.4614
+      },
+      "properties": {
+        "flower/plant name": "Sundew (Drosera) - flowers",
+        "scientific name": "Drosera spp.",
+        "region(s) of distribution": "Worldwide (bog habitats)",
+        "blooming season": "Spring–Summer",
+        "peak flowering months": "May–Jul",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Insectivorous plants; small flowers to avoid catching prey pollinators",
+        "plant type": "Shrub",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -54.4142,
+        "longitude": 36.9747
+      },
+      "properties": {
+        "flower/plant name": "Pitcher Plant (Sarracenia) - flowers",
+        "scientific name": "Sarracenia spp.",
+        "region(s) of distribution": "North America",
+        "blooming season": "Spring",
+        "peak flowering months": "Apr–May",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Specialized pollination strategies; avoid trapping pollinators",
+        "plant type": "Climber",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -47.8861,
+        "longitude": -136.7971
+      },
+      "properties": {
+        "flower/plant name": "Dutch Iris",
+        "scientific name": "Iris × hollandica",
+        "region(s) of distribution": "Garden hybrid; temperate gardens",
+        "blooming season": "Spring",
+        "peak flowering months": "Apr–May",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees and other insects; cut flower",
+        "plant type": "Climber",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 57.9349,
+        "longitude": -97.25
+      },
+      "properties": {
+        "flower/plant name": "Cigar Plant",
+        "scientific name": "Cuphea ignea",
+        "region(s) of distribution": "Mexico origin; ornamental",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Sep",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Attracts hummingbirds",
+        "plant type": "Creeper",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -18.7148,
+        "longitude": 145.6873
+      },
+      "properties": {
+        "flower/plant name": "Statice (Limonium)",
+        "scientific name": "Limonium sinuatum",
+        "region(s) of distribution": "Mediterranean origin; dried flower",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Good for dried arrangements; bees",
+        "plant type": "Herb",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -1.8822,
+        "longitude": 93.6003
+      },
+      "properties": {
+        "flower/plant name": "Heliotrope",
+        "scientific name": "Heliotropium arborescens",
+        "region(s) of distribution": "Peru origin; ornamental",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Sep",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Fragrant; bees and butterflies",
+        "plant type": "Shrub",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -25.821,
+        "longitude": -79.4148
+      },
+      "properties": {
+        "flower/plant name": "Silk Oak (flowers)",
+        "scientific name": "Grevillea robusta (flowers)",
+        "region(s) of distribution": "Australia origin; planted in tropics",
+        "blooming season": "Spring",
+        "peak flowering months": "Sep–Nov (southern hemisphere)",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bird pollinated",
+        "plant type": "Herb",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -31.5013,
+        "longitude": -89.4025
+      },
+      "properties": {
+        "flower/plant name": "Yarrow (Achillea)",
+        "scientific name": "Achillea millefolium",
+        "region(s) of distribution": "Temperate regions worldwide",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees; drought tolerant",
+        "plant type": "Shrub",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -20.0457,
+        "longitude": -148.106
+      },
+      "properties": {
+        "flower/plant name": "Catmint",
+        "scientific name": "Nepeta cataria (and N. × faassenii)",
+        "region(s) of distribution": "Europe & Asia; gardens worldwide",
+        "blooming season": "Late spring–summer",
+        "peak flowering months": "May–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Attracts bees and cats (Nepeta cataria)",
+        "plant type": "Climber",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -1.0339,
+        "longitude": 48.7348
+      },
+      "properties": {
+        "flower/plant name": "Eucalyptus (flowers)",
+        "scientific name": "Eucalyptus spp.",
+        "region(s) of distribution": "Australia; planted worldwide",
+        "blooming season": "Varies by species",
+        "peak flowering months": "Varies",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees and birds; nectar abundant",
+        "plant type": "Shrub",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 13.5991,
+        "longitude": 110.0678
+      },
+      "properties": {
+        "flower/plant name": "Bottle Rocket (Nicandra)",
+        "scientific name": "Nicandra physalodes",
+        "region(s) of distribution": "South America origin; garden plant",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Sep",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees; self‑seeding annual",
+        "plant type": "Creeper",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -47.4953,
+        "longitude": -53.2628
+      },
+      "properties": {
+        "flower/plant name": "Gloxinia",
+        "scientific name": "Sinningia speciosa",
+        "region(s) of distribution": "Brazil origin; houseplant",
+        "blooming season": "Spring–Summer",
+        "peak flowering months": "May–Jul",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Showy tubular flowers; hummingbirds/bees",
+        "plant type": "Climber",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -8.5906,
+        "longitude": 111.9974
+      },
+      "properties": {
+        "flower/plant name": "Queen Anne's Lace",
+        "scientific name": "Daucus carota",
+        "region(s) of distribution": "Europe; naturalized in N. America",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Umbellifer; small insects",
+        "plant type": "Climber",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 34.8732,
+        "longitude": 48.4781
+      },
+      "properties": {
+        "flower/plant name": "Common Poppy",
+        "scientific name": "Papaver rhoeas",
+        "region(s) of distribution": "Europe & temperate regions",
+        "blooming season": "Spring",
+        "peak flowering months": "Apr–Jun",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees and beetles",
+        "plant type": "Tree",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -27.7662,
+        "longitude": -58.9485
+      },
+      "properties": {
+        "flower/plant name": "Sidalcea (Checker Mallow)",
+        "scientific name": "Sidalcea spp.",
+        "region(s) of distribution": "North America",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees",
+        "plant type": "Climber",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -7.1873,
+        "longitude": -43.5818
+      },
+      "properties": {
+        "flower/plant name": "Hops (flowers)",
+        "scientific name": "Humulus lupulus",
+        "region(s) of distribution": "Europe & Asia; cultivated",
+        "blooming season": "Summer",
+        "peak flowering months": "Aug–Sep",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Wind and insect pollinated",
+        "plant type": "Climber",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 32.621,
+        "longitude": -121.2425
+      },
+      "properties": {
+        "flower/plant name": "Evening Stock",
+        "scientific name": "Matthiola longipetala",
+        "region(s) of distribution": "Mediterranean origin",
+        "blooming season": "Spring–Summer",
+        "peak flowering months": "May–Jul",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Fragrant in evening; moths",
+        "plant type": "Herb",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -24.7356,
+        "longitude": 126.5464
+      },
+      "properties": {
+        "flower/plant name": "Tansy",
+        "scientific name": "Tanacetum vulgare",
+        "region(s) of distribution": "Eurasia",
+        "blooming season": "Summer",
+        "peak flowering months": "Jul–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Bees and flies",
+        "plant type": "Shrub",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 49.624,
+        "longitude": 156.6944
+      },
+      "properties": {
+        "flower/plant name": "Marjoram (flowers)",
+        "scientific name": "Origanum majorana",
+        "region(s) of distribution": "Mediterranean",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Attracts pollinators; herb",
+        "plant type": "Climber",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 54.9983,
+        "longitude": -112.4781
+      },
+      "properties": {
+        "flower/plant name": "Bamboo (flowering event)",
+        "scientific name": "Various Bambusoideae",
+        "region(s) of distribution": "Asia, Africa, Americas",
+        "blooming season": "Varies (mass flowering cycles)",
+        "peak flowering months": "Varies",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Long mast flowering cycles; rodents/birds affected",
+        "plant type": "Shrub",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -52.4217,
+        "longitude": -119.6641
+      },
+      "properties": {
+        "flower/plant name": "Sagebrush (flowers)",
+        "scientific name": "Artemisia tridentata",
+        "region(s) of distribution": "North America",
+        "blooming season": "Spring–Summer",
+        "peak flowering months": "Apr–Jul",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Wind‑pollinated; aromatic foliage",
+        "plant type": "Tree",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 32.0444,
+        "longitude": -115.3193
+      },
+      "properties": {
+        "flower/plant name": "Milkweed",
+        "scientific name": "Asclepias spp.",
+        "region(s) of distribution": "North America",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Aug",
+        "fruiting period": "After flowering (pods)",
+        "pollinators / notes": "Specialized pollinators including monarch butterflies",
+        "plant type": "Tree",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 40.9194,
+        "longitude": -71.7897
+      },
+      "properties": {
+        "flower/plant name": "Daphne",
+        "scientific name": "Daphne spp.",
+        "region(s) of distribution": "Europe & Asia",
+        "blooming season": "Late winter–spring",
+        "peak flowering months": "Feb–Apr",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Fragrant; toxic berries",
+        "plant type": "Herb",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -59.6548,
+        "longitude": -179.4704
+      },
+      "properties": {
+        "flower/plant name": "Stonecrop (Sedum)",
+        "scientific name": "Sedum spp.",
+        "region(s) of distribution": "Northern Hemisphere",
+        "blooming season": "Summer–Autumn",
+        "peak flowering months": "Jun–Sep",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Succulent; attracts bees",
+        "plant type": "Climber",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -5.2871,
+        "longitude": -119.6529
+      },
+      "properties": {
+        "flower/plant name": "Wallflower",
+        "scientific name": "Erysimum cheiri",
+        "region(s) of distribution": "Mediterranean origin",
+        "blooming season": "Spring",
+        "peak flowering months": "Mar–May",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Fragrant; bees",
+        "plant type": "Climber",
+        "stem type": "Thick Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": -26.3905,
+        "longitude": -102.4163
+      },
+      "properties": {
+        "flower/plant name": "Cardoon (flowers)",
+        "scientific name": "Cynara cardunculus",
+        "region(s) of distribution": "Mediterranean",
+        "blooming season": "Summer",
+        "peak flowering months": "Jun–Aug",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Large thistle‑like flowers; bees",
+        "plant type": "Tree",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "latitude": 17.2534,
+        "longitude": -58.3358
+      },
+      "properties": {
+        "flower/plant name": "Snowdrop",
+        "scientific name": "Galanthus nivalis",
+        "region(s) of distribution": "Europe",
+        "blooming season": "Late winter–early spring",
+        "peak flowering months": "Feb–Mar",
+        "fruiting period": "After flowering",
+        "pollinators / notes": "Early nectar for bees",
+        "plant type": "Shrub",
+        "stem type": "Thin Stem",
+        "source_sheet": "Sheet1"
+      }
+    }
+  ]
+}
