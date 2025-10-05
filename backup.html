@@ -2,190 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- Include the CesiumJS JavaScript and CSS files -->
+  <title>Flower Explorer</title>
   <script src="https://cesium.com/downloads/cesiumjs/releases/1.134/Build/Cesium/Cesium.js"></script>
   <link href="https://cesium.com/downloads/cesiumjs/releases/1.134/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <style>
+    body, html { margin:0; padding:0; height:100%; overflow:hidden; }
+    #cesiumContainer { width:100%; height:100%; }
 
-</head>
-<body>
-  <div id="geocoderContainer" style="position:absolute; top:20px; left:20px; z-index:9999; background:white; padding:10px; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.2);">
-  <input type="text" id="search" placeholder="Search for a flower..." style="width:250px; padding:8px; border-radius:8px; border:1px solid #ccc;">
-  <div id="results" style="max-height:300px; overflow:auto; margin-top:10px;"></div>
-</div>
-  <div id="cesiumContainer"></div>
-    <style>
-    input {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      width: 300px;
-      padding: 10px;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-      font-size: 15px;
-      z-index: 999;
-      outline: none;
-      transition: 0.3s;
+    #geocoderContainer {
+      position:absolute; top:20px; left:20px; z-index:9999;
+      background:white; padding:10px; border-radius:10px; 
+      box-shadow:0 2px 10px rgba(0,0,0,0.2); width:300px;
     }
 
-    input:focus {
-      border-color: #e63946;
-      box-shadow: 0 0 8px rgba(230, 57, 70, 0.3);
+    #search {
+      width:100%; padding:8px; border-radius:8px; border:1px solid #ccc;
+      font-size:15px; outline:none;
     }
 
-    .results {
-      position: absolute;
-      top: 50px;
-      left: 10px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      width: 320px;
-      max-height: 250px;
-      overflow-y: auto;
-      z-index: 999;
-      padding: 10px;
+    #results {
+      max-height:300px; overflow:auto; margin-top:10px;
     }
 
-    .result-item {
-      padding: 6px;
-      cursor: pointer;
-      border-radius: 5px;
+    .flowerResult {
+      padding:5px; cursor:pointer; border-bottom:1px solid #eee;
     }
+    .flowerResult:hover { background:#eee; }
 
-    .result-item:hover {
-      background: #eee;
+    #sidePanel {
+      position:absolute; top:20px; right:20px; width:350px; max-height:600px; 
+      overflow-y:auto; background:white; padding:15px; border-radius:10px;
+      box-shadow:0 2px 10px rgba(0,0,0,0.2); display:none; z-index:9999;
     }
   </style>
-  <script type="module">
-    // Your access token can be found at: https://ion.cesium.com/tokens.
-    // This is the default access token from your ion account
+</head>
+<body>
+  <div id="geocoderContainer">
+    <input type="text" id="search" placeholder="Search for a flower...">
+    <div id="results"></div>
+  </div>
+  <div id="sidePanel"></div>
+  <div id="cesiumContainer"></div>
 
+  <script type="module">
     Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJjNTAwZTMyMC0yMzI5LTRkNTQtODU0MS0xNmVkMTdhY2NjMTQiLCJpZCI6MzQ3MTkzLCJpYXQiOjE3NTk1OTU4MjF9.LuVC_WFOM1-jENYq6DgqMYcLml3e9a8eXFGZDuVroBc';
 
-    // Initialize the Cesium Viewer in the HTML element with the `cesiumContainer` ID.
     const viewer = new Cesium.Viewer('cesiumContainer', {
       terrain: Cesium.Terrain.fromWorldTerrain(),
-      creditContainer: document.createElement('div'),
-        animation: false,
-        timeline: false,
-        fullscreenButton: false,
-        vrButton: false,
-        homeButton: false,
-        infoBox: false,
-        sceneModePicker: false,
-        navigationHelpButton: false,
-        baseLayerPicker: false,
-        geocoder: false
-        
-    });    
+      animation: false, timeline: false, fullscreenButton: false,
+      vrButton: false, homeButton: false, infoBox: false,
+      sceneModePicker: false, navigationHelpButton: false,
+      baseLayerPicker: false, geocoder: false
+    });
 
-    // Fly the camera to San Francisco at the given longitude, latitude, and height.
     viewer.camera.flyTo({
-    destination: Cesium.Cartesian3.fromDegrees(0.0, 0.0, 20000000), // Over equator, very far up (20,000 km)
-    orientation: {
-        heading: Cesium.Math.toRadians(0.0), // pointing along the prime meridian
-        pitch: Cesium.Math.toRadians(-90.0), // straight down
-        roll: 0.0
-
-    }
+      destination: Cesium.Cartesian3.fromDegrees(0.0, 0.0, 20000000),
+      orientation: { heading:0, pitch:Cesium.Math.toRadians(-90), roll:0 }
     });
-async function addFlowerPinsFromExcel() {
-  // Load the Excel file
-  const response = await fetch('./flowers1.xlsx');
-  const arrayBuffer = await response.arrayBuffer();
 
-  // Parse the Excel file
-  const workbook = XLSX.read(arrayBuffer, { type: 'array' });
-  const sheetName = workbook.SheetNames[0]; // first sheet
-  const sheet = workbook.Sheets[sheetName];
-  const data = XLSX.utils.sheet_to_json(sheet);
-   let flowers = [];
+    const searchInput = document.getElementById("search");
+    const resultsDiv = document.getElementById("results");
+    const sidePanel = document.getElementById("sidePanel");
 
-fetch("./flowers.json")
-  .then(res => res.json())
-  .then(data => {
-    flowers = data;
-  });
-
-const searchInput = document.getElementById("search");
-const resultsDiv = document.getElementById("results");
-
-searchInput.addEventListener("input", e => {
-  const query = e.target.value.toLowerCase();
-  const filtered = flowers.filter(flower =>
-    flower.name.toLowerCase().includes(query) ||
-    flower.scientific_name.toLowerCase().includes(query) ||
-    flower.region.toLowerCase().includes(query) ||
-    flower.blooming_season.toLowerCase().includes(query)
-  );
-
-  resultsDiv.innerHTML = filtered.map(flower => `
-    <div class="flowerResult" style="padding:5px; cursor:pointer; border-bottom:1px solid #eee;">
-      🌸 ${flower.name} <br><small>${flower.region}</small>
-    </div>
-  `).join("");
-
-  document.querySelectorAll(".flowerResult").forEach((el, i) => {
-    el.addEventListener("click", () => {
-      const f = filtered[i];
-      viewer.entities.add({
-        position: Cesium.Cartesian3.fromDegrees(f.longitude, f.latitude, 0),
-        billboard: {
-          image: 'https://cdn-icons-png.flaticon.com/512/616/616408.png',
-          width: 32,
-          height: 32
-        },
-        label: {
-          text: f.name,
-          verticalOrigin: Cesium.VerticalOrigin.TOP
-        }
-      });
-      viewer.camera.flyTo({
-        destination: Cesium.Cartesian3.fromDegrees(f.longitude, f.latitude, 1000000)
-      });
-    });
-  });
-});
-
-  // Create pins for each row
-  const pinBuilder = new Cesium.PinBuilder();
-  let counter = 1;
-  
-  data.forEach(row => {
-    const lat = parseFloat(row.Latitude);
-    const lon = parseFloat(row.Longitude);
-    const name = row.Name || `Pin ${counter++}`;
-    
-    if (isFinite(lat) && isFinite(lon)) {
-      viewer.entities.add({
-        position: Cesium.Cartesian3.fromDegrees(lon, lat),
-        label: {
-          text: name,
-          verticalOrigin: Cesium.VerticalOrigin.TOP,
-          pixelOffset: new Cesium.Cartesian2(0, 10),
-          font: '16px sans-serif',
-          fillColor: Cesium.Color.BLACK,
-          outlineColor: Cesium.Color.WHITE,
-          outlineWidth: 2
-        },
-        billboard: {
-          image: pinBuilder.fromColor(Cesium.Color.SALMON, 48).toDataURL(),
-          verticalOrigin: Cesium.VerticalOrigin.BOTTOM
-        }
-      });
+    async function loadFlowers() {
+      const response = await fetch('./flowers1.xlsx');
+      const arrayBuffer = await response.arrayBuffer();
+      const workbook = XLSX.read(arrayBuffer, { type: 'array' });
+      const sheet = workbook.Sheets[workbook.SheetNames[0]];
+      return XLSX.utils.sheet_to_json(sheet);
     }
-  });
- // Fly camera to the loaded pins
-  viewer.flyTo(viewer.entities);
-}
-    
-addFlowerPinsFromExcel();
-    // Add Cesium OSM Buildings, a global 3D buildings layer.
+
+    const flowers = await loadFlowers();
+    let filtered = [];
+
+    searchInput.addEventListener("input", e => {
+      const query = e.target.value.toLowerCase();
+      filtered = flowers.filter(f =>
+        (f.Name || "").toLowerCase().includes(query) ||
+        (f["Scientific Name"] || "").toLowerCase().includes(query) ||
+        (f["Region(s) of Distribution"] || "").toLowerCase().includes(query) ||
+        (f["Blooming Season"] || "").toLowerCase().includes(query)
+      );
+
+      resultsDiv.innerHTML = filtered.map(f => `
+        <div class="flowerResult">🌸 ${f.Name} <br><small>${f["Region(s) of Distribution"]}</small></div>
+      `).join("");
+    });
+
+    // Click result -> show side panel
+    resultsDiv.addEventListener("click", event => {
+      const target = event.target.closest(".flowerResult");
+      if (!target) return;
+
+      const index = Array.from(resultsDiv.children).indexOf(target);
+      const f = filtered[index];
+      if (!f) return;
+
+      sidePanel.innerHTML = `
+        <h2>${f.Name}</h2>
+        <p><strong>Scientific Name:</strong> ${f["Scientific Name"]}</p>
+        <p><strong>Region(s) of Distribution:</strong> ${f["Region(s) of Distribution"]}</p>
+        <p><strong>Blooming Season:</strong> ${f["Blooming Season"]}</p>
+        <p><strong>Peak Flowering Months:</strong> ${f["Peak Flowering Months"] || "N/A"}</p>
+        <p><strong>Fruiting Period:</strong> ${f["Fruiting Period"] || "N/A"}</p>
+        <p><strong>Pollinators / Notes:</strong> ${f["Pollinators / Notes"] || "N/A"}</p>
+        <p><strong>Plant Type:</strong> ${f["Plant Type"] || "N/A"}</p>
+        <p><strong>Stem Type:</strong> ${f["Stem Type"] || "N/A"}</p>
+        <p><strong>Latitude:</strong> ${f.Latitude}</p>
+        <p><strong>Longitude:</strong> ${f.Longitude}</p>
+      `;
+      sidePanel.style.display = "block";
+    });
+
+    // Optional: add Cesium OSM Buildings
     const buildingTileset = await Cesium.createOsmBuildingsAsync();
-    viewer.scene.primitives.add(buildingTileset);   
+    viewer.scene.primitives.add(buildingTileset);
+
   </script>
- </div>
 </body>
 </html>
