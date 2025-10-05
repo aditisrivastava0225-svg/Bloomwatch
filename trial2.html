@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Flower Explorer + Weather</title>
+
+  <!-- CesiumJS -->
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.134/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.134/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+
+  <!-- XLSX for Excel reading -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+  <style>
+    body, html { margin:0; padding:0; height:100%; overflow:hidden; font-family:sans-serif; }
+    #cesiumContainer { width:100%; height:100%; }
+
+    #geocoderContainer {
+      position:absolute; top:20px; left:20px; z-index:9999;
+      background:white; padding:10px; border-radius:10px; 
+      box-shadow:0 2px 10px rgba(0,0,0,0.2); width:300px;
+    }
+
+    #search {
+      width:100%; padding:8px; border-radius:8px; border:1px solid #ccc;
+      font-size:15px; outline:none;
+    }
+
+    #results {
+      max-height:300px; overflow:auto; margin-top:10px;
+    }
+
+    .flowerResult {
+      padding:5px; cursor:pointer; border-bottom:1px solid #eee;
+    }
+    .flowerResult:hover { background:#eee; }
+
+    #sidePanel {
+      position:absolute; top:20px; right:20px; width:350px; max-height:600px; 
+      overflow-y:auto; background:white; padding:15px; border-radius:10px;
+      box-shadow:0 2px 10px rgba(0,0,0,0.2); display:none; z-index:9999;
+    }
+
+    #weatherSection {
+      margin-top:15px; padding-top:10px; border-top:1px solid #ddd;
+    }
+
+    #weatherIcon {
+      width:50px; height:50px; vertical-align:middle;
+    }
+  </style>
+</head>
+<body>
+  <div id="geocoderContainer">
+    <input type="text" id="search" placeholder="Search for a flower...">
+    <div id="results"></div>
+  </div>
+  <div id="sidePanel"></div>
+  <div id="cesiumContainer"></div>
+
+  <script type="module">
+    Cesium.Ion.defaultAccessToken =
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJjNTAwZTMyMC0yMzI5LTRkNTQtODU0MS0xNmVkMTdhY2NjMTQiLCJpZCI6MzQ3MTkzLCJpYXQiOjE3NTk1OTU4MjF9.LuVC_WFOM1-jENYq6DgqMYcLml3e9a8eXFGZDuVroBc';
+
+    const viewer = new Cesium.Viewer('cesiumContainer', {
+      terrain: Cesium.Terrain.fromWorldTerrain(),
+      animation: false,
+      timeline: false,
+      fullscreenButton: false,
+      vrButton: false,
+      homeButton: false,
+      infoBox: false,
+      sceneModePicker: false,
+      navigationHelpButton: false,
+      baseLayerPicker: false,
+      geocoder: false
+    });
+
+    viewer.camera.flyTo({
+      destination: Cesium.Cartesian3.fromDegrees(0.0, 0.0, 20000000),
+      orientation: { heading:0, pitch:Cesium.Math.toRadians(-90), roll:0 }
+    });
+
+    const searchInput = document.getElementById("search");
+    const resultsDiv = document.getElementById("results");
+    const sidePanel = document.getElementById("sidePanel");
+
+    // Load flower data from Excel
+    async function loadFlowers() {
+      const response = await fetch('./flowers1.xlsx');
+      const arrayBuffer = await response.arrayBuffer();
+      const workbook = XLSX.read(arrayBuffer, { type: 'array' });
+      const sheet = workbook.Sheets[workbook.SheetNames[0]];
+      return XLSX.utils.sheet_to_json(sheet);
+    }
+
+    const flowers = await loadFlowers();
+    let filtered = [];
+    let currentWeatherEntity = null;
+
+    // Search functionality
+    searchInput.addEventListener("input", e => {
+      const query = e.target.value.toLowerCase();
+      filtered = flowers.filter(f =>
+        (f.Name || "").toLowerCase().includes(query) ||
+        (f["Scientific Name"] || "").toLowerCase().includes(query) ||
+        (f["Region(s) of Distribution"] || "").toLowerCase().includes(query) ||
+        (f["Blooming Season"] || "").toLowerCase().includes(query)
+      );
+
+      resultsDiv.innerHTML = filtered.map(f => `
+        <div class="flowerResult">🌸 ${f.Name} <br><small>${f["Region(s) of Distribution"]}</small></div>
+      `).join("");
+    });
+
+    // Fetch weather
+    async function getWeather(lat, lon) {
+      const API_KEY = "3b56ae0997ae643fae1b065096bd709b";
+      const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
+      const url = `${BASE_URL}?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
+
+      try {
+        const res = await fetch(url);
+        const data = await res.json();
+        if (data.cod !== 200) throw new Error(data.message);
+
+        const icon = data.weather[0].icon;
+        const description = data.weather[0].description;
+        const temp = data.main.temp;
+
+        return { 
+          html: `
+            <div id="weatherSection">
+              <h3>🌦 Current Weather</h3>
+              <p><img id="weatherIcon" src="https://openweathermap.org/img/wn/${icon}@2x.png" alt=""> 
+              <strong>${description}</strong></p>
+              <p><strong>Temperature:</strong> ${temp} °C</p>
+              <p><strong>Humidity:</strong> ${data.main.humidity}%</p>
+              <p><strong>Wind Speed:</strong> ${data.wind.speed} m/s</p>
+              <p><strong>Location:</strong> ${data.name || "Unknown"}</p>
+            </div>
+          `,
+          temp,
+          icon,
+          description
+        };
+      } catch (error) {
+        return { html: `<p style="color:red;">Weather unavailable: ${error.message}</p>` };
+      }
+    }
+
+    // Click result -> show details and marker
+    resultsDiv.addEventListener("click", async event => {
+      const target = event.target.closest(".flowerResult");
+      if (!target) return;
+
+      const index = Array.from(resultsDiv.children).indexOf(target);
+      const f = filtered[index];
+      if (!f) return;
+
+      // Move camera
+      if (f.Latitude && f.Longitude) {
+        viewer.camera.flyTo({
+          destination: Cesium.Cartesian3.fromDegrees(
+            parseFloat(f.Longitude), parseFloat(f.Latitude), 1000000
+          )
+        });
+      }
+
+      // Fetch weather
+      let weatherData = { html: "", temp: null, icon: null };
+      if (f.Latitude && f.Longitude) {
+        weatherData = await getWeather(f.Latitude, f.Longitude);
+      } else {
+        weatherData.html = `<p>No location data for this flower.</p>`;
+      }
+
+      // Show panel
+      sidePanel.innerHTML = `
+        <h2>${f.Name}</h2>
+        <p><strong>Scientific Name:</strong> ${f["Scientific Name"]}</p>
+        <p><strong>Region(s) of Distribution:</strong> ${f["Region(s) of Distribution"]}</p>
+        <p><strong>Blooming Season:</strong> ${f["Blooming Season"]}</p>
+        <p><strong>Peak Flowering Months:</strong> ${f["Peak Flowering Months"] || "N/A"}</p>
+        <p><strong>Fruiting Period:</strong> ${f["Fruiting Period"] || "N/A"}</p>
+        <p><strong>Pollinators / Notes:</strong> ${f["Pollinators / Notes"] || "N/A"}</p>
+        <p><strong>Plant Type:</strong> ${f["Plant Type"] || "N/A"}</p>
+        <p><strong>Stem Type:</strong> ${f["Stem Type"] || "N/A"}</p>
+        <p><strong>Latitude:</strong> ${f.Latitude}</p>
+        <p><strong>Longitude:</strong> ${f.Longitude}</p>
+        ${weatherData.html}
+      `;
+      sidePanel.style.display = "block";
+
+      // Remove previous marker
+      if (currentWeatherEntity) viewer.entities.remove(currentWeatherEntity);
+
+      // Add weather marker on the globe
+      if (f.Latitude && f.Longitude && weatherData.icon) {
+        currentWeatherEntity = viewer.entities.add({
+          position: Cesium.Cartesian3.fromDegrees(parseFloat(f.Longitude), parseFloat(f.Latitude)),
+          billboard: {
+            image: `https://openweathermap.org/img/wn/${weatherData.icon}@2x.png`,
+            scale: 1.2,
+            verticalOrigin: Cesium.VerticalOrigin.BOTTOM
+          },
+          label: {
+            text: `${f.Name}\n${weatherData.temp}°C`,
+            font: '16px sans-serif',
+            fillColor: Cesium.Color.WHITE,
+            outlineColor: Cesium.Color.BLACK,
+            outlineWidth: 2,
+            style: Cesium.LabelStyle.FILL_AND_OUTLINE,
+            verticalOrigin: Cesium.VerticalOrigin.TOP,
+            pixelOffset: new Cesium.Cartesian2(0, -40)
+          }
+        });
+      }
+    });
+
+    // Add optional 3D buildings
+    const buildingTileset = await Cesium.createOsmBuildingsAsync();
+    viewer.scene.primitives.add(buildingTileset);
+  </script>
+</body>
+</html>
