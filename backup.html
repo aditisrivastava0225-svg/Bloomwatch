@@ -9,7 +9,55 @@
 
 </head>
 <body>
+  <div id="geocoderContainer" style="position:absolute; top:20px; left:20px; z-index:9999; background:white; padding:10px; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.2);">
+  <input type="text" id="search" placeholder="Search for a flower..." style="width:250px; padding:8px; border-radius:8px; border:1px solid #ccc;">
+  <div id="results" style="max-height:300px; overflow:auto; margin-top:10px;"></div>
+</div>
   <div id="cesiumContainer"></div>
+    <style>
+    input {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 300px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+      z-index: 999;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus {
+      border-color: #e63946;
+      box-shadow: 0 0 8px rgba(230, 57, 70, 0.3);
+    }
+
+    .results {
+      position: absolute;
+      top: 50px;
+      left: 10px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      width: 320px;
+      max-height: 250px;
+      overflow-y: auto;
+      z-index: 999;
+      padding: 10px;
+    }
+
+    .result-item {
+      padding: 6px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .result-item:hover {
+      background: #eee;
+    }
+  </style>
   <script type="module">
     // Your access token can be found at: https://ion.cesium.com/tokens.
     // This is the default access token from your ion account
@@ -53,6 +101,53 @@ async function addFlowerPinsFromExcel() {
   const sheetName = workbook.SheetNames[0]; // first sheet
   const sheet = workbook.Sheets[sheetName];
   const data = XLSX.utils.sheet_to_json(sheet);
+   let flowers = [];
+
+fetch("./flowers.json")
+  .then(res => res.json())
+  .then(data => {
+    flowers = data;
+  });
+
+const searchInput = document.getElementById("search");
+const resultsDiv = document.getElementById("results");
+
+searchInput.addEventListener("input", e => {
+  const query = e.target.value.toLowerCase();
+  const filtered = flowers.filter(flower =>
+    flower.name.toLowerCase().includes(query) ||
+    flower.scientific_name.toLowerCase().includes(query) ||
+    flower.region.toLowerCase().includes(query) ||
+    flower.blooming_season.toLowerCase().includes(query)
+  );
+
+  resultsDiv.innerHTML = filtered.map(flower => `
+    <div class="flowerResult" style="padding:5px; cursor:pointer; border-bottom:1px solid #eee;">
+      🌸 ${flower.name} <br><small>${flower.region}</small>
+    </div>
+  `).join("");
+
+  document.querySelectorAll(".flowerResult").forEach((el, i) => {
+    el.addEventListener("click", () => {
+      const f = filtered[i];
+      viewer.entities.add({
+        position: Cesium.Cartesian3.fromDegrees(f.longitude, f.latitude, 0),
+        billboard: {
+          image: 'https://cdn-icons-png.flaticon.com/512/616/616408.png',
+          width: 32,
+          height: 32
+        },
+        label: {
+          text: f.name,
+          verticalOrigin: Cesium.VerticalOrigin.TOP
+        }
+      });
+      viewer.camera.flyTo({
+        destination: Cesium.Cartesian3.fromDegrees(f.longitude, f.latitude, 1000000)
+      });
+    });
+  });
+});
 
   // Create pins for each row
   const pinBuilder = new Cesium.PinBuilder();
